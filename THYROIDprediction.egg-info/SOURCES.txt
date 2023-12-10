@@ -1,0 +1,8 @@
+README.md
+setup.py
+THYROIDprediction.egg-info/PKG-INFO
+THYROIDprediction.egg-info/SOURCES.txt
+THYROIDprediction.egg-info/dependency_links.txt
+THYROIDprediction.egg-info/requires.txt
+THYROIDprediction.egg-info/top_level.txt
+src/__init__.py
