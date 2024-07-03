@@ -4,4 +4,5 @@ matplotlib
 flask
 seaborn
 scikit-learn
+imblearn
 -e .

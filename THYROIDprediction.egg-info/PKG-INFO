@@ -3,3 +3,10 @@ Name: THYROIDprediction
 Version: 0.0.1
 Author: ANAM
 Author-email: anamshaikh0515@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: flask
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: imblearn

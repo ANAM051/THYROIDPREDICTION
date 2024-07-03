@@ -5,4 +5,15 @@ THYROIDprediction.egg-info/SOURCES.txt
 THYROIDprediction.egg-info/dependency_links.txt
 THYROIDprediction.egg-info/requires.txt
 THYROIDprediction.egg-info/top_level.txt
+notebooks/__init__.py
+pipeline/__init__.py
+pipeline/prediction_pipeline.py
+pipeline/training_pipeline.py
 src/__init__.py
+src/exception.py
+src/logger.py
+src/utils.py
+src/components/__init__.py
+src/components/data_ingestion.py
+src/components/data_transformation.py
+src/components/model_trainer.py
