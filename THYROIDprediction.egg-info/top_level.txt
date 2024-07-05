@@ -1,3 +1,2 @@
 notebooks
-pipeline
 src
