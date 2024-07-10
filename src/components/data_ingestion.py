@@ -20,12 +20,14 @@ class DataIngestionconfig:
 
 ## create the data ingestion class
 
-class DataIngestion:
+class DataIngestion():
     def __init__(self):
         self.ingestion_config=DataIngestionconfig()
-
+        
     def initiate_data_ingestion(self):
         logging.info('Data Ingestion method starts')
+        
+        
 
         try:
             data=pd.read_csv(os.path.join('notebooks/data','thyroid_data.csv'))
@@ -54,9 +56,9 @@ class DataIngestion:
             raise CustomException(e,sys)
         
          
-        # run Data Ingestion
+        ## run Data Ingestion
         
         
-        if __name__=='__main__':
-            obj=DataIngestion()
-            train_data,test_data=obj.initiate_data_ingestion()
+if __name__=='__main__':
+    obj=DataIngestion()
+    train_data,test_data=obj.initiate_data_ingestion()
