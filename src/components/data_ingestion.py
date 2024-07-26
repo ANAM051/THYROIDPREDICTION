@@ -38,7 +38,7 @@ class DataIngestion():
         
 
         try:
-            data=pd.read_csv(os.path.join('notebooks/data','thyroid_data.csv'))
+            data=pd.read_csv(os.path.join('notebooks/data/T_HYROID (1).csv'))
             logging.info('Dataset read as pandas Dataframe')
 
     
@@ -67,11 +67,4 @@ class DataIngestion():
             raise CustomException(e,sys)
         
          
-        ## run Data Ingestion
-        
-        
-if __name__=='__main__':
-    obj=DataIngestion()
-    train_data_path,test_data_path=obj.initiate_data_ingestion()
-    data_transformation=DataTransformation()
-    train_arr,test_arr,_=data_transformation.initaite_data_transformation(train_data_path,test_data_path)
+       
