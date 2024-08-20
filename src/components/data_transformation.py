@@ -1,17 +1,13 @@
 import sys
 from dataclasses import dataclass
-
 import numpy  as np 
 import pandas as pd
+
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder,StandardScaler
 from sklearn.preprocessing import OneHotEncoder
-
-
-
-
 from src.exception import CustomException
 from src.logger import logging
 import os
@@ -34,8 +30,6 @@ class DataTransformation:
             numerical_cols = ['Age','TSH','T3','T4U','TT4','FTI']
             
             
-            
-            
             logging.info('Pipeline Initiated')
 
             ## Numerical Pipeline
@@ -53,8 +47,8 @@ class DataTransformation:
                 steps=[
                 ('imputer',SimpleImputer(strategy='most_frequent')),
    
-
-                ('Onehotencoder',OneHotEncoder(categories='auto')),
+                #('ordinalencoder',OrdinalEncoder(categories=[Sex_categories])),
+                ('Onehotencoder',OneHotEncoder(categories='auto',handle_unknown='ignore')),
                 ('scaler',StandardScaler(with_mean=False))
             ]
 
@@ -70,14 +64,6 @@ class DataTransformation:
         
             logging.info('Pipeline Completed')
             
-    
-
-            
-            
-            
-
-
-
         except Exception as e:
             logging.info("Error in Data Transformation")
             raise CustomException(e,sys)

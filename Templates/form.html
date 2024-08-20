@@ -1,0 +1,90 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="Age">Age:</label>
+        <input type="text" id="Age" name="Age" placeholder="Enter Age value (int)">
+    </div>
+
+    <div class="form-group">
+        <label for="TSH">TSH:</label>
+        <input type="text" id="TSH" name="TSH" placeholder="Enter TSH value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="T3">T3:</label>
+        <input type="text" id="T3" name="T3" placeholder="Enter T3 value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="TT4">TT4:</label>
+        <input type="text" id="TT4" name="TT4" placeholder="Enter TT4 value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="T4U">T4U:</label>
+        <input type="text" id="T4U" name="T4U" placeholder="Enter T4U value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="FTI">FTI:</label>
+        <input type="text" id="FTI" name="FTI" placeholder="Enter FTI value (float)">
+    </div>         
+  
+<div class="form-group">
+  <label for="Sex">Sex:</label>
+  <select id="Sex" name="Sex">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    
+  </select>
+</div>
+  
+<div class="form-group">
+  <label for="Sick">Sick:</label>
+  <select id="Sick" name="Sick">
+    <option value="True">True</option>
+    <option value="False">False</option>
+    
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="Pregnant">Pregnant:</label>
+  <select id="Pregnant" name="Pregnant">
+    <option value="True">True</option>
+    <option value="False">False</option>
+   
+  </select>
+</div>
+
+<div class="form-group">
+    <label for="ThyroidSurgery">ThyroidSurgery:</label>
+    <select id="ThyroidSurgery" name="ThyroidSurgery">
+      <option value="True">True</option>
+      <option value="False">False</option>
+     
+    </select>
+  </div>
+ 
+  <div class="form-group">
+    <label for="Goitre">Goitre:</label>
+    <select id="Goitre" name="Goitre">
+      <option value="True">True</option>
+      <option value="False">False</option>
+     
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="Tumor">Tumor:</label>
+    <select id="Tumor" name="Tumor">
+      <option value="True">True</option>
+      <option value="False">False</option>
+     
+    </select>
+  </div>
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
